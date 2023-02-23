@@ -28,7 +28,13 @@ O maior número é: 106
 
 
 def main():
-    pass # your code here
+    A = int(input("Digite o valor A: "))
+    B = int(input("Digite o valor B: "))
+    C = int(input("Digite o valor C: "))
+    maiorAB = (A + B + abs(A - B)) /2
+    maiorABC = (maiorAB + C + abs(maiorAB - C)) /2
+    maior = int(maiorABC)
+    print(f"O maior número é: {maior}")
 
 
 if __name__ == '__main__':
